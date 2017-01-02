@@ -1,0 +1,35 @@
+body {
+  visibility: hidden;
+}
+
+body[data-lockdown-mode] {
+  visibility: visible;
+}
+
+[data-lockdown-mode='true'] [role='header'],
+[data-lockdown-mode='true'] .member-footer,
+[data-lockdown-mode='true'] .galleryHeader,
+[data-lockdown-mode='true'] .MoreLikeThis,
+[data-lockdown-mode='true'] .lolomo,
+[data-lockdown-mode='true'] .myListWrapper,
+[data-lockdown-mode='true'] .mylist-button,
+[data-lockdown-mode='false'] .lockdownHeader  {
+  display: none!important;
+}
+
+[data-lockdown-mode='true'] .lockdownHeader h1 {
+  font-size: 36px;
+  font-weight: normal;
+  padding: 36px 0 72px;
+  min-height: 44px;
+  margin: 0 4%;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  color: white;
+}
+
+[data-lockdown-mode='true'] .galleryContent {
+  margin-top: 115px;
+}
